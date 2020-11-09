@@ -1,8 +1,8 @@
 package unit.tests;
 
 public class Calculator {
-    public double Calculate(int first, int second, String operator) throws Exception {
-        double result;
+    public Double Calculate(Double first, Double second, String operator) throws Exception {
+        Double result;
 
         switch(operator)
         {
