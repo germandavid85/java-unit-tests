@@ -9,7 +9,6 @@ public class Controller {
         this.ptoPayment = ptoPayment;
     }
 
-    // not so smart calculation as vacations should be subracted from the payment, just for the sake of the example
     public final EmployeePayment calculateSalary(final String employeeId, final Double baseSalary, final Double totalVacations) throws Exception {
         payroll.calculateAndPay(employeeId, baseSalary);
         ptoPayment.calculateAndPay(employeeId, baseSalary, totalVacations);

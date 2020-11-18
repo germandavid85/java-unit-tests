@@ -21,6 +21,10 @@ public class EmployeePayment {
         return this.vacations > 0;
     }
 
+    public Double totalPayment() {
+        return this.vacations + this.baseSalary;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
