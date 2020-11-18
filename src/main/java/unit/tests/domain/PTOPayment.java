@@ -1,4 +1,6 @@
-package unit.tests;
+package unit.tests.domain;
+
+import unit.tests.persistence.DB;
 
 public class PTOPayment {
     private static final double MONTH_TOTAL_DAYS = 30d;

@@ -1,4 +1,4 @@
-package unit.tests;
+package unit.tests.domain;
 
 public class Calculator {
     public Double Calculate(Double first, Double second, String operator) throws Exception {

@@ -1,4 +1,7 @@
-package unit.tests;
+package unit.tests.service;
+
+import unit.tests.domain.PTOPayment;
+import unit.tests.domain.Payroll;
 
 public class Controller {
     private final Payroll payroll;

@@ -1,4 +1,4 @@
-package unit.tests;
+package unit.tests.persistence;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

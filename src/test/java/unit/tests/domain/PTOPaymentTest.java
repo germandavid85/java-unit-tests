@@ -1,4 +1,4 @@
-package unit.tests;
+package unit.tests.domain;
 
 public class PTOPaymentTest {
 
