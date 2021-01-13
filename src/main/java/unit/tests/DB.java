@@ -1,9 +1,9 @@
-package unit.tests.persistence;
+package unit.tests;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class DB {
+public class DB implements PaymentDataAccess {
     private static final Map<String, Double> CURRENT_PAYMENT = new ConcurrentHashMap<>();
     private static final Map<String, Double> VACATIONS_PAYMENT = new ConcurrentHashMap<>();
     private static final Map<String, Double> DISCOUNTS = Map.of(

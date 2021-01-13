@@ -1,15 +1,12 @@
-package unit.tests.domain;
-
-import unit.tests.persistence.DB;
+package unit.tests;
 
 public class PTOPayment {
     private static final double MONTH_TOTAL_DAYS = 30d;
-    private final Calculator calculator;
-    private final DB db;
+    private final Calculator calculator = new Calculator();
+    private final PaymentDataAccess paymentDataAccess;
 
-    public PTOPayment(final Calculator calculator, final DB db) {
-        this.calculator = calculator;
-        this.db = db;
+    public PTOPayment(final PaymentDataAccess paymentDataAccess) {
+        this.paymentDataAccess = paymentDataAccess;
     }
 
     public void calculateAndPay(final String employeeId, final Double baseSalary, double days) throws Exception {
@@ -23,11 +20,11 @@ public class PTOPayment {
             days,
             "*");
 
-        db.setVacationsPayment(employeeId, vacationsToPay);
+            paymentDataAccess.setVacationsPayment(employeeId, vacationsToPay);
     }
 
     public Double getCurrentPayment(final String employeeId) {
-        return db.getVacationsPayment(employeeId);
+        return paymentDataAccess.getVacationsPayment(employeeId);
     }
 
 }

@@ -1,4 +1,4 @@
-package unit.tests.domain;
+package unit.tests;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

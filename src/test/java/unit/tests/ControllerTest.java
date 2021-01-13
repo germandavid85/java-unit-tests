@@ -1,4 +1,4 @@
-package unit.tests.service;
+package unit.tests;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -10,8 +10,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import unit.tests.domain.PTOPayment;
-import unit.tests.domain.Payroll;
+import unit.tests.PTOPayment;
+import unit.tests.Payroll;
 
 @ExtendWith(MockitoExtension.class)
 public class ControllerTest {

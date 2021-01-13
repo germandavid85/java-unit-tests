@@ -1,4 +1,4 @@
-package unit.tests.service;
+package unit.tests;
 
 public class EmployeePayment {
     private final Double baseSalary;
