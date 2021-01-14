@@ -10,15 +10,24 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class PayrollWithDummyTest {
-    private Payroll payroll = new Payroll(new DBDummy());
+    PaymentDataAccess db = new DBDummy();
+    private Payroll payroll = new Payroll(db);
 
     @Test
-    public void doAPayroll() throws Exception {
+    public void doAPayrollTest() throws Exception {
         payroll.calculateAndPay("e1", 1100.98);
 
         double actualPayment = payroll.getCurrentPayment("e1");
 
         assertThat(actualPayment, equalTo(1100.98));
+    }
 
+    @Test
+    public void doAPayrollDBTest() throws Exception {
+        payroll.calculateAndPay("e1", 1100.98);
+
+        double actualPayment = db.getPayment("e1");
+
+        assertThat(actualPayment, equalTo(1100.98));
     }
 }
