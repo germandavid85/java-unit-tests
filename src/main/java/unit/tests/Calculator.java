@@ -7,7 +7,7 @@ public class Calculator {
         switch(operator)
         {
             case "+":
-                result = first + second;
+                result = sum(first, second);
                 break;
 
             case "-":
@@ -31,5 +31,9 @@ public class Calculator {
         }
 
         return result;
+    }
+
+    Double sum(final Double first, final Double second) {
+        return first +  second;
     }
 }
