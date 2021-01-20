@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.*;
 
 import java.util.stream.Stream;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -18,7 +18,7 @@ public class SmellsTest
     @Test
     public void multipleAssertionsWithoutMessage() throws Exception {
         assertThat("invalid sum", calc.Calculate(1.0, 0.0, "+"), is(equalTo(1.0)));
-        assertThat("invalid subract", calc.Calculate(1.0, 0.0, "-"), is(equalTo(-1.0)));
+        assertThat("invalid subract", calc.Calculate(1.0, 0.0, "-"), is(equalTo(1.0)));
     }
 
     // avoid conditionals of any logic in the test, this case must be two separate cases

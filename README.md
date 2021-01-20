@@ -14,6 +14,7 @@
 - v0.4: test doubles, isolation
 - v0.5: property based testing
 - v0.6: test smells
+- v0.7: test coverage
 
 ## proposed exercises
 
@@ -21,6 +22,8 @@
 - `v0.4`: implement unit tests for PTOPayment
 - `v0.5`: implement PBT for Calculator multiplication and subtraction
 - `v0.5`: implement PBT Payroll
+- `v0.7`: setup the coverage threshold to 72 in the pom.xml
+- `v0.7`: implement some test to pass the 72% threshold
 
 ## docs
 
@@ -29,3 +32,4 @@
 - [Test smells examples](https://testsmells.github.io/pages/testsmellexamples.html)
 - [Book: Unit Testing Principles](https://www.amazon.com/-/es/Vladimir-Khorikov/dp/1617296279)
 - [Book: The Art Of Unit Testing](https://www.amazon.com/-/es/Roy-Osherove/dp/1617290890)
+- [Test coverage](https://martinfowler.com/bliki/TestCoverage.html)

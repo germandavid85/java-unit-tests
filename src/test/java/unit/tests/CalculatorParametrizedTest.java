@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvFileSource;
+// import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
 public class CalculatorParametrizedTest {
@@ -20,8 +20,9 @@ public class CalculatorParametrizedTest {
         assertThat(calc.Calculate(first, second, operator), is(equalTo(expected)));
     }
 
-    @ParameterizedTest
-    @CsvFileSource(resources = "./calculator.csv", numLinesToSkip = 1)
+    // @ParameterizedTest
+    // @Ignore
+    // @CsvFileSource(resources = "./calculator.csv", numLinesToSkip = 1)
     public void calculateCSVTest(double first, double second, String operator, double expected) throws Exception {
         Calculator calc = new Calculator();
 
