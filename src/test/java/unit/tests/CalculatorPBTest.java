@@ -3,10 +3,9 @@ package unit.tests;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-import org.junit.Ignore;
-
 import net.jqwik.api.Arbitraries;
 import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Disabled;
 import net.jqwik.api.ForAll;
 import net.jqwik.api.Label;
 import net.jqwik.api.Property;
@@ -39,7 +38,7 @@ public class CalculatorPBTest {
     }
 
     @Property
-    @Ignore
+    @Disabled
     void sumIsAssociative(@ForAll double first) throws Exception {
         double actual = calculator.Calculate(calculator.Calculate(first, 1.0, "+"), 1.0, "+");
         double associativeResult = calculator.Calculate(1.0, 1.0, "+");
@@ -71,13 +70,13 @@ public class CalculatorPBTest {
     }
 
     @Property
-    @Ignore
+    @Disabled
     void zeroDividedByAnyIsZero(@ForAll double first) throws Exception {
         assertThat(calculator.Calculate(0.0, first, "/"), is(equalTo(0.0)));
     }
 
     @Property
-    @Ignore
+    @Disabled
     void divisionByZeroIsInvalid(@ForAll double first) throws Exception {
         assertThat(calculator.Calculate(first, 0.0, "/"), is(equalTo(Double.POSITIVE_INFINITY)));
     }

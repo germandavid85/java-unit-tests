@@ -15,6 +15,7 @@
 - v0.5: property based testing
 - v0.6: test smells
 - v0.7: test coverage
+- v0.8: extending junit
 
 ## proposed exercises
 
@@ -24,6 +25,7 @@
 - `v0.5`: implement PBT Payroll
 - `v0.7`: setup the coverage threshold to 72 in the pom.xml
 - `v0.7`: implement some test to pass the 72% threshold
+- `v0.8`: add another functionality to `TimeReportExtension` to print the final status of the execution, if a single test fails then add  `execution status: FAILED` otherwise `execution status: PASSED`. *Hint:* you may need to use the extension store as in this [example](https://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks-before-after-execution)
 
 ## docs
 

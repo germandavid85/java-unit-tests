@@ -10,7 +10,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import unit.tests.extensions.TimeReportExtension;
+
 @ExtendWith(MockitoExtension.class)
+@ExtendWith(TimeReportExtension.class)
 public class ControllerTest {
     @Mock private Payroll payroll;
 

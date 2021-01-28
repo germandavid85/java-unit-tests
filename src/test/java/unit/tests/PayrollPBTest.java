@@ -5,7 +5,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import org.junit.Ignore;
 import org.mockito.AdditionalMatchers;
 
 import net.jqwik.api.ForAll;
@@ -13,7 +12,6 @@ import net.jqwik.api.Property;
 import net.jqwik.api.constraints.DoubleRange;
 import net.jqwik.api.lifecycle.BeforeTry;
 
-@Ignore
 public class PayrollPBTest {
     private PaymentDataAccess dbMock;
     private Payroll payroll;
